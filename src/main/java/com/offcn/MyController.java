@@ -30,7 +30,7 @@ public class MyController {
     }
     @RequestMapping("/getUserList")
     public String getUserList(Model model){
-        List<User> list = new ArrayList<User>();
+        List<User> list = new ArrayList<>();
         list.add(new User(1,"luck",24));
         list.add(new User(2,"sht",53));
         list.add(new User(3,"jjy",44));
@@ -63,6 +63,7 @@ public class MyController {
         model.addAttribute("date",date);
         model.addAttribute("num", 123.456);
         String str= "aajsfoqi;wehf[qe0fjqgnaefv;oifjafasnfj";
+        System.out.println();
         return "index7";
     }
 }
